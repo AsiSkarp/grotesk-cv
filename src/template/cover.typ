@@ -1,11 +1,11 @@
-#import "@preview/grotesk-cv:1.0.1": cover-letter, recipient-entry, cv-section
+#let metadata = toml("info.toml")
+
+#import metadata.import.path: cover-letter, recipient-entry, cv-section
 #import "@preview/fontawesome:0.4.0": *
 
-#let metadata = toml("info.toml")
 #let first-name = metadata.personal.first_name
 #let last-name = metadata.personal.last_name
 #let text-size = eval(metadata.layout.text.cover_letter_size)
-
 
 #show: cover-letter.with(metadata)
 #set text(size: text-size)

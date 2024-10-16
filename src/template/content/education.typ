@@ -1,8 +1,8 @@
-#import "@preview/grotesk-cv:1.0.1": education-entry
+#let meta = toml("../info.toml")
+
+#import meta.import.path: education-entry
 #import "@preview/fontawesome:0.4.0": *
 
-
-#let meta = toml("../info.toml")
 #let icon = meta.section.icon.education
 #let language = meta.personal.language
 #let include-icon = meta.personal.include_icons

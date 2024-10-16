@@ -1,6 +1,6 @@
-#import "@preview/grotesk-cv:1.0.1": cv
-
 #let metadata = toml("info.toml")
+
+#import metadata.import.path: cv
 #let photo = image("./img/" + metadata.personal.profile_image)
 
 #let import-sections(
