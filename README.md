@@ -1,5 +1,5 @@
 <h1 align="center"> grotesk-cv </h1>
-<div align="center">Version 1.0.0</div>
+<div align="center">Version 1.0.1</div>
 <span></span>
 
 

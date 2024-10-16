@@ -1,4 +1,4 @@
-#import "@preview/grotesk-cv:1.0.0": reference-entry
+#import "@preview/grotesk-cv:1.0.1": reference-entry
 #import "@preview/fontawesome:0.4.0": *
 
 #let meta = toml("../info.toml")

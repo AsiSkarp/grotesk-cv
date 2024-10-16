@@ -1,4 +1,4 @@
-#import "@preview/grotesk-cv:1.0.0": cover-letter, recipient-entry, cv-section
+#import "@preview/grotesk-cv:1.0.1": cover-letter, recipient-entry, cv-section
 #import "@preview/fontawesome:0.4.0": *
 
 #let metadata = toml("info.toml")

@@ -1,4 +1,4 @@
-#import "@preview/grotesk-cv:1.0.0": education-entry
+#import "@preview/grotesk-cv:1.0.1": education-entry
 #import "@preview/fontawesome:0.4.0": *
 
 
