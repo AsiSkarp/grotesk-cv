@@ -10,7 +10,6 @@ description = "A clean CV and cover letter template based on brilliant-cv and Sk
 repository = "https://github.com/AsiSkarp/grotesk-cv"
 keywords = ["cv", "resume", "cover-letter", "curriculum-vitae"]
 categories = ["cv", "layout"]
-disciplines = []
 exclude = [
 	".github",
 	"docs",
