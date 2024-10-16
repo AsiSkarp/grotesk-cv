@@ -18,7 +18,8 @@ exclude = [
 	".typstignore",
 	"Justfile",
 	"*.pdf",
-	"/examples",
+	"cover_letter_example.png",
+	"cv_example.png",
 ]
 
 [template]

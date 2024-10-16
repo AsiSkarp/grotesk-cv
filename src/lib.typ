@@ -204,7 +204,7 @@
       size: 9pt,
       weight: "bold",
       style: "italic",
-      date,
+      company,
     ),
   )
 }
