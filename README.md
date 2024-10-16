@@ -2,7 +2,7 @@
 <div align="center">Version 1.0.0</div>
 
 
-grotesk-cv provides a pair of elegant and simple, one-page CV and cover letter templates, inspired by  the [Brilliant-cv](https://typst.app/universe/package/brilliant-cv/) and [fireside](https://typst.app/universe/package/fireside/1.0.0/) templates.
+Grotesk-cv provides a pair of elegant and simple, one-page CV and cover letter templates, inspired by  the [Brilliant-cv](https://typst.app/universe/package/brilliant-cv/) and [fireside](https://typst.app/universe/package/fireside/1.0.0/) templates.
 
 
 ### Features 
