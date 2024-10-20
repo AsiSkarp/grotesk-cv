@@ -55,4 +55,4 @@ subtitle = "Software Engineer with a knack for human-friendly AI solutions"
 subtitle = "Ingeniero de software con un talento para soluciones de IA amigables para humanos"
 
 [import]
-path = "@preview/grotesk-cv:1.0.0"
+path = "@preview/grotesk-cv:1.0.1"
