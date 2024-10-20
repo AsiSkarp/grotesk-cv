@@ -15,7 +15,7 @@ grotesk-cv provides a pair of elegant and simple, one-page CV and cover letter t
 
 | CV | Cover Letter |
 | :---: | :---: |
-| <img src="./examples/cv_example.png"> | <img src="./examples/cover_letter_example.png"> |
+| ![CV](https://github.com/AsiSkarp/grotesk-cv/blob/main/examples/cv_example.png?raw=true) | ![Cover Letter](https://github.com/AsiSkarp/grotesk-cv/blob/main/examples/cover_letter_example.png?raw=true) |
 
 
 
