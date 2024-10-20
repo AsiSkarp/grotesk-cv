@@ -2,7 +2,7 @@
 #import "@preview/fontawesome:0.4.0": *
 
 #let icon = meta.section.icon.personal
-#let language = meta.layout.language
+#let language = meta.personal.language
 #let include-icon = meta.personal.include_icons
 
 
