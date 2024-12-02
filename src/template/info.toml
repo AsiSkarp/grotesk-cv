@@ -9,15 +9,15 @@ include_icons = true
 address = "Los Angeles, CA"
 telephone = "+1 (555) 123-4567"
 
-[personal.email]
+[personal.info.email]
 link = "mailto:m.dyson@skynet.ai"
 label = "m.dyson@skynet.ai"
 
-[personal.linkedin]
+[personal.info.linkedin]
 link = "https://linkedin.com/in/milesdyson"
 label = "linkedin.com/in/milesdyson"
 
-[personal.github]
+[personal.info.github]
 link = "https://github.com/skynetguy"
 label = "github.com/skynetguy"
 
