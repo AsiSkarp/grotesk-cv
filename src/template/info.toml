@@ -15,7 +15,7 @@ label = "m.dyson@skynet.ai"
 
 [personal.info.linkedin]
 link = "https://linkedin.com/in/milesdyson"
-label = "linkedin.com/in/milesdyson"
+label = "linkedin.com/in/miledyson"
 
 [personal.info.github]
 link = "https://github.com/skynetguy"
@@ -64,4 +64,5 @@ subtitle = "Software Engineer with a knack for human-friendly AI solutions"
 subtitle = "Ingeniero de software con un talento para soluciones de IA amigables para humanos"
 
 [import]
-path = "@preview/grotesk-cv:1.0.1"
+path = "@preview/grotesk-cv:1.0.2"
+fontawesome = "@preview/fontawesome:0.5.0"
