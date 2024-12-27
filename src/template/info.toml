@@ -8,9 +8,18 @@ include_icons = true
 [personal.info]
 address = "Los Angeles, CA"
 telephone = "+1 (555) 123-4567"
-email = "m.dyson@skynet.ai"
-linkedin = "linkedin.com/in/milesdyson"
-github = "github.com/skynetguy"
+
+[personal.info.email]
+link = "mailto:m.dyson@skynet.ai"
+label = "m.dyson@skynet.ai"
+
+[personal.info.linkedin]
+link = "https://linkedin.com/in/milesdyson"
+label = "linkedin.com/in/milesdyson"
+
+[personal.info.github]
+link = "https://github.com/skynetguy"
+label = "github.com/skynetguy"
 
 [personal.icon]
 address = "house"

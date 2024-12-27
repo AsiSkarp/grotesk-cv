@@ -53,6 +53,14 @@
   )
 }
 
+#let info-value(val) = {
+  if type(val) == str {
+    val
+  } else if type(val) == dictionary {
+    link(val.link, val.label)
+  }
+}
+
 #let info-block(
   metadata,
 ) = {
@@ -63,7 +71,7 @@
   table(
     columns: (1fr, 1fr),
     stroke: none,
-    ..info.pairs().map(((key, val)) => info-block-style(icons.at(key), val, color, include-icons))
+    ..info.pairs().map(((key, val)) => info-block-style(icons.at(key), info-value(val), color, include-icons))
   )
 }
 
