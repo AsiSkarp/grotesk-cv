@@ -75,6 +75,21 @@
   )
 }
 
+#let make-info-table(
+  metadata,
+) = {
+  let color = metadata.layout.text.color.medium
+  let info = metadata.personal.info
+  let icons = metadata.personal.icon
+  let include-icons = metadata.personal.include_icons
+  table(
+    columns: 1fr,
+    align: right,
+    stroke: none,
+    ..info.pairs().map(((key, val)) => info-block-style(icons.at(key), info-value(val), color, include-icons))
+  )
+}
+
 #let header-table(
   metadata,
 ) = {
@@ -145,21 +160,6 @@
     {
       right-comp
     }
-  )
-}
-
-#let make-info-table(
-  metadata,
-) = {
-  let color = metadata.layout.text.color.medium
-  let info = metadata.personal.info
-  let icons = metadata.personal.icon
-  let include-icons = metadata.personal.include_icons
-  table(
-    columns: 1fr,
-    align: right,
-    stroke: none,
-    ..info.pairs().map(((key, val)) => info-block-style(icons.at(key), info-value(val), color, include-icons))
   )
 }
 
@@ -349,7 +349,7 @@
     inset: 0pt,
     stroke: none,
     row-gutter: 3mm,
-    [#degree-style(title)] ,
+    [#degree-style(title)],
     [#date-style(date)],
     table.cell(colspan: 2)[#institution-style(company), #location-style(location)],
   )
