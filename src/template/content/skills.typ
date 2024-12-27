@@ -6,6 +6,8 @@
 #let language = meta.personal.language
 #let include-icon = meta.personal.include_icons
 #let accent-color = meta.layout.accent_color
+#let multicol = true
+#let alignment = center
 
 
 = #if include-icon [#fa-icon(icon) #h(5pt)] #if language == "en" [Skills] else if language == "es" [Habilidades]
@@ -18,10 +20,13 @@
 
   #skill-entry(
     accent-color,
+    multicol,
+    alignment,
     skills: (
       [C++],
       [Python],
       [Java],
+      [Rust],
     ),
   )
 
@@ -29,6 +34,8 @@
 
   #skill-entry(
     accent-color,
+    multicol,
+    alignment,
     skills: (
       [TensorFlow],
       [PyTorch],
@@ -40,11 +47,13 @@
 
   #skill-entry(
     accent-color,
+    multicol,
+    alignment,
     skills: (
       [Docker],
       [Kubernetes],
       [Jenkins],
-      [Cloud Deployment],
+      [Cloud],
     ),
   )
 
@@ -52,6 +61,8 @@
 
   #skill-entry(
     accent-color,
+    multicol,
+    alignment,
     skills: (
       [ROS],
       [Gazebo],
@@ -59,21 +70,12 @@
     ),
   )
 
-  === Databases
-
-  #skill-entry(
-    accent-color,
-    skills: (
-      [SQL],
-      [NoSQL],
-      [MongoDB],
-    ),
-  )
-
   === Tools
 
   #skill-entry(
     accent-color,
+    multicol,
+    alignment,
     skills: (
       [Git],
       [Jira],
@@ -88,6 +90,8 @@
 
   #skill-entry(
     accent-color,
+    multicol,
+    alignment,
     skills: (
       [C++],
       [Python],
@@ -99,6 +103,8 @@
 
   #skill-entry(
     accent-color,
+    multicol,
+    alignment,
     skills: (
       [TensorFlow],
       [PyTorch],
@@ -110,6 +116,8 @@
 
   #skill-entry(
     accent-color,
+    multicol,
+    alignment,
     skills: (
       [Docker],
       [Kubernetes],
@@ -122,6 +130,8 @@
 
   #skill-entry(
     accent-color,
+    multicol,
+    alignment,
     skills: (
       [ROS],
       [Gazebo],
@@ -129,21 +139,12 @@
     ),
   )
 
-  === Bases de datos
-
-  #skill-entry(
-    accent-color,
-    skills: (
-      [SQL],
-      [NoSQL],
-      [MongoDB],
-    ),
-  )
-
   === Herramientas
 
   #skill-entry(
     accent-color,
+    multicol,
+    alignment,
     skills: (
       [Git],
       [Jira],
