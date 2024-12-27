@@ -182,7 +182,7 @@
   cv-header(
     cover-header-table(metadata),
     make-info-table(metadata),
-    (65%, 30%),
+    (65%, 34%),
     left,
   )
 }
@@ -375,21 +375,20 @@
 
 #let skill-entry(
   color,
+  cols,
+  align,
   skills: (),
 ) = {
   table(
-    columns: 1fr,
+    columns: if cols == true { (1fr, 1fr) } else { 1fr },
     inset: 0pt,
     stroke: none,
-    row-gutter: 2mm,
+    row-gutter: 3mm,
     column-gutter: 3mm,
-    align: center,
-    for sk in skills {
-      [#skill-tag(color, sk) #h(4pt)]
-    },
+    align: align,
+    ..skills.map(sk => skill-tag(color, sk))
   )
 }
-
 
 #let language-entry(
   language: "Language",
