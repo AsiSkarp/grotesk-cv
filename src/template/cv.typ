@@ -1,7 +1,7 @@
-#let metadata = toml("info.toml")
+#let meta = toml("info.toml")
 
-#import metadata.import.path: cv
-#let photo = image("./img/" + metadata.personal.profile_image)
+#import meta.import.path: cv
+#let photo = image("./img/" + meta.personal.profile_image)
 
 #let import-sections(
   sections,
@@ -27,11 +27,11 @@
 )
 
 #show: cv.with(
-  metadata,
+  meta,
   photo: photo,
   use-photo: true,
   left-pane: import-sections(left-pane),
   right-pane: import-sections(right-pane),
-  left-pane-proportion: eval(metadata.layout.left_pane_width),
+  left-pane-proportion: eval(meta.layout.left_pane_width),
 )
 

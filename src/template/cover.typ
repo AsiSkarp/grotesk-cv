@@ -1,13 +1,12 @@
-#let metadata = toml("info.toml")
+#let meta = toml("info.toml")
 
-#import metadata.import.path: cover-letter, recipient-entry, cv-section
-#import "@preview/fontawesome:0.4.0": *
+#import meta.import.path: cover-letter, recipient-entry, cv-section
+#import meta.import.fontawesome: *
 
-#let first-name = metadata.personal.first_name
-#let last-name = metadata.personal.last_name
-#let text-size = eval(metadata.layout.text.cover_letter_size)
-
-#show: cover-letter.with(metadata)
+#let first-name = meta.personal.first_name
+#let last-name = meta.personal.last_name
+#let text-size = eval(meta.layout.text.cover_letter_size)
+#show: cover-letter.with(meta)
 #set text(size: text-size)
 
 

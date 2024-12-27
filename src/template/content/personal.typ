@@ -1,5 +1,5 @@
 #let meta = toml("../info.toml")
-#import "@preview/fontawesome:0.4.0": *
+#import meta.import.fontawesome: *
 
 #let icon = meta.section.icon.personal
 #let language = meta.personal.language

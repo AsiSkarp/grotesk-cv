@@ -1,4 +1,5 @@
-#import "@preview/fontawesome:0.4.0": *
+#let meta = toml("template/info.toml")
+#import meta.import.fontawesome: *
 
 
 #let section-title-style(str, color) = {
@@ -40,7 +41,6 @@
   color,
   include-icons,
 ) = {
-
   text(
     size: 10pt,
     fill: rgb(color),
@@ -159,7 +159,7 @@
     columns: 1fr,
     align: right,
     stroke: none,
-    ..info.pairs().map(((key, val)) => info-block-style(icons.at(key), val, color, include-icons))
+    ..info.pairs().map(((key, val)) => info-block-style(icons.at(key), info-value(val), color, include-icons))
   )
 }
 

@@ -1,6 +1,6 @@
 #let meta = toml("../info.toml")
 #import meta.import.path: experience-entry
-#import "@preview/fontawesome:0.4.0": *
+#import meta.import.fontawesome: *
 
 #let icon = meta.section.icon.experience
 #let language = meta.personal.language
