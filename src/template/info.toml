@@ -48,7 +48,7 @@ accent_color = "#d4d2cc"
 left_pane_width = "71%"
 
 [layout.text]
-font = "Hanken Grotesk"
+font = "HK Grotesk"
 size = "10pt"
 cover_letter_size = "11pt"
 
