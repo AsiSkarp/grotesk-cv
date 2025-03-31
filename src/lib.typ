@@ -333,7 +333,9 @@
     stroke: none,
     row-gutter: 3mm,
     [#degree-style(degree)], [#date-style(date)],
-    [#institution-style(institution), #location-style(location)],
+    [
+      #institution-style(institution)#if location != "Location" [, #location-style(location) ]
+    ],
   )
   v(2pt)
 }
