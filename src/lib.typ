@@ -353,7 +353,9 @@
     row-gutter: 3mm,
     [#degree-style(title)],
     [#date-style(date)],
-    table.cell(colspan: 2)[#institution-style(company), #location-style(location)],
+    table.cell(colspan: 2)[
+      #institution-style(company)#if location != "Location" [, #location-style(location) ]
+    ],
   )
   v(5pt)
 }
