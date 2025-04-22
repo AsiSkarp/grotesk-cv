@@ -324,7 +324,6 @@
   date: "Date",
   institution: "Institution",
   location: "Location",
-  description: "",
   highlights: (),
 ) = {
   table(

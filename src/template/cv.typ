@@ -1,6 +1,7 @@
 #let meta = toml("info.toml")
 
-#import meta.import.path: cv
+// #import meta.import.path: cv
+#import meta.import.lib-path: cv
 #let photo = image("./img/" + meta.personal.profile_image)
 
 #let import-sections(

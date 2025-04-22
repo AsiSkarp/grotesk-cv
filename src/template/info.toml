@@ -3,7 +3,7 @@ first_name = "Miles"
 last_name = "Dyson"
 profile_image = "portrait.png"
 language = "en"
-include_icons = true
+include_icons = false
 
 [personal.info]
 address = "Los Angeles, CA"
@@ -48,7 +48,7 @@ accent_color = "#d4d2cc"
 left_pane_width = "71%"
 
 [layout.text]
-font = "HK Grotesk"
+font = "Hanken Grotesk"
 size = "10pt"
 cover_letter_size = "11pt"
 
@@ -64,5 +64,6 @@ subtitle = "Software Engineer with a knack for human-friendly AI solutions"
 subtitle = "Ingeniero de software con un talento para soluciones de IA amigables para humanos"
 
 [import]
-path = "@preview/grotesk-cv:1.0.2"
+path = "@local/grotesk-cv:1.0.3"
+lib-path = "../lib.typ"
 fontawesome = "@preview/fontawesome:0.5.0"

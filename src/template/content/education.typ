@@ -16,7 +16,6 @@
   degree: [M.Sc. Artifical Intelligence],
   date: [2006 - 2008],
   institution: [California Institute of Technology],
-  location: [Pasadena, CA],
 )
 
 #if language == "en" [

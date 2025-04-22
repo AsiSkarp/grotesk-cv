@@ -1,6 +1,6 @@
 #let meta = toml("info.toml")
 
-#import meta.import.path: cover-letter, recipient-entry, cv-section
+#import meta.import.lib-path: cover-letter, recipient-entry, cv-section
 #import meta.import.fontawesome: *
 
 #let first-name = meta.personal.first_name

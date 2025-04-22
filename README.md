@@ -1,5 +1,5 @@
 <h1 align="center"> grotesk-cv </h1>
-<div align="center">Version 1.0.2</div>
+<div align="center">Version 1.0.3</div>
 <span></span>
 
 
@@ -39,8 +39,9 @@ In the following example, the `projects.typ` section file has been created and i
 To change the profile photo, upload your image to the `content/img` folder. To enable the new image, update the `profile_image` value in `info.toml` with the name of your uploaded image. 
 
 
-### Changing FontAwesome Icons
-The template uses [FontAwesome](https://fontawesome.com/) for all icons. To change an icon, change the desired icon string in the `info.toml` file with the corresponding FontAwesome icon name. Icon strings can be found in the [cheat sheet](https://fontawesome.com/v4/cheatsheet/). Note that the icon strings must be written without the `fa-` prefix. 
+### Using FontAwesome Icons
+The template is configured to use [FontAwesome](https://fontawesome.com/) for section icons. Typst Universe does not support FontAwesome icons out of the box, so to use them you will need to download a FontAwesome `.otf` or `.ttf` file and upload them to the `src/template/font` folder. 
+To change an icon, change the desired icon string in the `info.toml` file with the corresponding FontAwesome icon name. Icon strings can be found in the [cheat sheet](https://fontawesome.com/v4/cheatsheet/). Note that the icon strings must be written without the `fa-` prefix. 
 To disable the use of icons, set the `include_icons` value to `false`.
 
 
