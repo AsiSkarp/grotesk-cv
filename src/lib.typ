@@ -1,4 +1,4 @@
-#let meta = toml("template/info.toml")
+#let meta = toml("./template/info.toml")
 #import meta.import.fontawesome: *
 
 

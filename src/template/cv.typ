@@ -1,4 +1,4 @@
-#let meta = toml("info.toml")
+#let meta = toml("./info.toml")
 
 // #import meta.import.path: cv
 #import meta.import.lib-path: cv
