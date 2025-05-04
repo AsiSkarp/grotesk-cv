@@ -64,6 +64,7 @@ subtitle = "Software Engineer with a knack for human-friendly AI solutions"
 subtitle = "Ingeniero de software con un talento para soluciones de IA amigables para humanos"
 
 [import]
-path = "@local/grotesk-cv:1.0.3"
+#path = "@local/grotesk-cv:1.0.3"
+path = "../../lib.typ"
 lib-path = "../lib.typ"
 fontawesome = "@preview/fontawesome:0.5.0"
