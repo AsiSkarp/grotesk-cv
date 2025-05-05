@@ -1,6 +1,6 @@
 #let meta = toml("../info.toml")
 
-#import meta.import.path: education-entry
+#import "../../lib.typ": education-entry
 #import meta.import.fontawesome: *
 
 #let icon = meta.section.icon.education

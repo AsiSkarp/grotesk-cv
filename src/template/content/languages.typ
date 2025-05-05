@@ -1,5 +1,6 @@
 #let meta = toml("../info.toml")
-#import meta.import.path: language-entry
+
+#import "../../lib.typ": language-entry
 #import meta.import.fontawesome: *
 
 #let icon = meta.section.icon.languages

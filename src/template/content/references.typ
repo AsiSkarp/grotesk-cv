@@ -1,5 +1,6 @@
 #let meta = toml("../info.toml")
-#import meta.import.path: reference-entry
+
+#import "../../lib.typ": reference-entry
 #import meta.import.fontawesome: *
 
 #let icon = meta.section.icon.references

@@ -26,6 +26,3 @@ exclude = [
 path = "src/template"
 entrypoint = "cv.typ"
 thumbnail = "thumbnail.png"
-
-# [tool.mytool]
-# foo = "bar"
