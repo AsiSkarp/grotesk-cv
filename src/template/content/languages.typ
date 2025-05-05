@@ -1,6 +1,6 @@
 #let meta = toml("../info.toml")
 
-#import "../../lib.typ": language-entry
+#import "@preview/grotesk-cv:1.0.3": language-entry
 #import meta.import.fontawesome: *
 
 #let icon = meta.section.icon.languages
