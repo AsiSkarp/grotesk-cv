@@ -1,6 +1,6 @@
 #let meta = toml("../info.toml")
 
-#import "@preview/grotesk-cv:1.0.3": experience-entry
+#import "@preview/grotesk-cv:1.0.4": experience-entry
 #import meta.import.fontawesome: *
 
 #let icon = meta.section.icon.other_experience

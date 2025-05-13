@@ -85,8 +85,6 @@ In the following example, the language of the **Profile** section has been chang
 ### Changing Fonts
 If using the template online with Typst Universe, multiple font types are available to use, a list of which can be found by pressing the `Ag` button. To use a different font, upload a `ttf` or `otf` file to the `content/fonts` folder and update the `font` value in the `info.toml` file with the name of the uploaded font. For local use, ensure that the font file is installed on your system or available in the `content/fonts` folder. The template is configured to use the `HK Grotesk` font family by default, but this can be changed in the `info.toml` file. 
 
-```toml
-
 
 ### Installation
 

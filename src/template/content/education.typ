@@ -1,6 +1,6 @@
 #let meta = toml("../info.toml")
 
-#import "@preview/grotesk-cv:1.0.3": education-entry
+#import "@preview/grotesk-cv:1.0.4": education-entry
 #import meta.import.fontawesome: *
 
 #let icon = meta.section.icon.education
