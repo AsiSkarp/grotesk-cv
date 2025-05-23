@@ -63,13 +63,14 @@
 
 #let info-block(
   metadata,
+  use-photo,
 ) = {
   let info = metadata.personal.info
   let icons = metadata.personal.icon
   let color = metadata.layout.text.color.medium
   let include-icons = metadata.personal.include_icons
   table(
-    columns: (1fr, 1fr),
+    columns: if use-photo {(1fr, 1fr)} else {(1fr, 1fr, 1fr)},
     stroke: none,
     ..info.pairs().map(((key, val)) => info-block-style(icons.at(key), info-value(val), color, include-icons))
   )
@@ -92,6 +93,7 @@
 
 #let header-table(
   metadata,
+  use-photo,
 ) = {
   let lang = metadata.personal.language
   let subtitle = metadata.language.at(lang).at("subtitle")
@@ -105,7 +107,7 @@
         subtitle,
         metadata.layout.text.color.dark,
       )],
-    [#info-block(metadata)],
+    [#info-block(metadata, use-photo)],
   )
 }
 
@@ -169,9 +171,9 @@
   use-photo: false,
 ) = {
   cv-header(
-    header-table(metadata),
+    header-table(metadata, use-photo),
     make-header-photo(photo, use-photo),
-    (74%, 20%),
+    if use-photo {(74%, 20%)} else {(96%, 0%)},
     left,
   )
 }
