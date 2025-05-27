@@ -463,6 +463,21 @@
   )
 }
 
+#let inject-ia(
+  metadata
+) = {
+  let lang = metadata.personal.language
+  let aiInjectionPrompt = text(metadata.language.at(lang).at("ai_prompt"))
+  let prompt = ""
+  if metadata.personal.ia.inject_ai_prompt {
+    prompt = prompt + aiInjectionPrompt
+  }
+  if metadata.personal.ia.inject_keywords {
+    prompt = prompt + " " + metadata.personal.ia.keywords_list.join(" ")
+  }
+
+  place(text(prompt, size: 2pt, fill: rgb(metadata.layout.fill_color)), dx: 0%, dy: 0%)
+}
 
 #let cv(
   metadata,
@@ -492,6 +507,7 @@
   set list(marker: [‣])
   create-header(metadata, photo, use-photo: use-photo)
   create-panes(left-pane, right-pane, left-pane-proportion)
+  inject-ia(metadata)
   doc
 }
 
