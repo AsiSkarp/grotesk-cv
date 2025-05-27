@@ -488,6 +488,11 @@
   left-pane-proportion: 71%,
   doc,
 ) = {
+  set document(
+    title: metadata.personal.first_name + " " + metadata.personal.last_name +
+      " - " + metadata.language.at(metadata.personal.language).at("cv_document_name", default: "CV"),
+    author: metadata.personal.first_name + " " + metadata.personal.last_name,
+  )
   set text(
     fill: rgb(metadata.layout.text.color.dark),
     font: metadata.layout.text.font,
@@ -515,6 +520,11 @@
   metadata,
   doc,
 ) = {
+  set document(
+    title: metadata.personal.first_name + " " + metadata.personal.last_name +
+      " - " + metadata.language.at(metadata.personal.language).at("cover_letter_document_name", default: "Cover letter"),
+    author: metadata.personal.first_name + " " + metadata.personal.last_name,
+  )
   set text(
     fill: rgb(metadata.layout.text.color.dark),
     font: metadata.layout.text.font,
