@@ -137,7 +137,11 @@
     box(
       clip: true,
       radius: 50%,
-      photo,
+      square(
+        stroke: none,
+        inset: 0pt,
+        photo,
+      )
     )
   } else {
     box(

@@ -2,7 +2,7 @@
 
 // #import meta.import.path: cv
 #import "@preview/grotesk-cv:1.0.4": cv
-#let photo = image("./img/" + meta.personal.profile_image)
+#let photo = image(width: 100%, height: 100%, "./img/" + meta.personal.profile_image)
 
 #let import-sections(
   sections,
