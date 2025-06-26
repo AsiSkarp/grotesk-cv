@@ -316,7 +316,9 @@
     row-gutter: 3mm,
     [#reference-name-style(name)],
     [#company-name-style(company)],
-    table.cell(colspan: 2)[#phonenumber-style(telephone), #email-style(email)],
+    table.cell(colspan: 2)[
+      #if telephone != "Telephone" [#phonenumber-style(telephone), ]#email-style(email)
+    ],
   )
   v(2pt)
 }
