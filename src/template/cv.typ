@@ -1,7 +1,7 @@
 #let meta = toml("./info.toml")
 
 // #import meta.import.path: cv
-#import "@preview/grotesk-cv:1.0.4": cv
+#import "@preview/grotesk-cv:1.0.5": cv
 #let photo = image(width: 100%, height: 100%, "./img/" + meta.personal.profile_image)
 
 #let import-sections(

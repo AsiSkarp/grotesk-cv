@@ -1,6 +1,6 @@
 #let meta = toml("./info.toml")
 
-#import "@preview/grotesk-cv:1.0.4": cover-letter, recipient-entry, cv-section
+#import "@preview/grotesk-cv:1.0.5": cover-letter, cv-section, recipient-entry
 #import meta.import.fontawesome: *
 
 #let first-name = meta.personal.first_name

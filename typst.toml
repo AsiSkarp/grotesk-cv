@@ -2,7 +2,7 @@
 
 [package]
 name = "grotesk-cv"
-version = "1.0.4"
+version = "1.0.5"
 entrypoint = "src/lib.typ"
 authors = ["Ásbjörn Skarphéðinsson <https://github.com/AsiSkarp>"]
 license = "Unlicense"
