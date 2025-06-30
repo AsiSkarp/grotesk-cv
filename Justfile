@@ -6,9 +6,6 @@ export TYPST_ROOT := root
 default:
 	@just --list --unsorted
 
-# generate manual
-doc:
-	typst compile docs/manual.typ docs/manual.pdf
 
 # run test suite
 test *args:
