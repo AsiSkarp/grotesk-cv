@@ -59,11 +59,6 @@ jobs:
 
       - name: Release package
         run: |
-          mkdir -p "typst-packages/${{ env.PATH_PREFIX }}/$PKG_NAME"
-          mv "out/${PKG_NAME}/${PKG_VERSION}" "typst-packages/${{ env.PATH_PREFIX }}/${PKG_NAME}"
-          rmdir "out/${PKG_NAME}"
-          rmdir out
-
           GIT_USER_NAME="$(git log -1 --pretty=format:'%an')"
           GIT_USER_EMAIL="$(git log -1 --pretty=format:'%ae')"
 
@@ -78,12 +73,17 @@ jobs:
 
           if git ls-remote --exit-code --heads origin "${BRANCH}"; then
             echo "Branch ${BRANCH} already exists on remote. Checking it out..."
-            git checkout "${BRANCH}"
-            git pull origin "${BRANCH}"
+            git checkout -b "${BRANCH}" origin/"${BRANCH}"
           else
             echo "Creating new branch ${BRANCH}"
             git checkout -b "${BRANCH}"
           fi
+
+          # Now copy files into the checked out branch
+          mkdir -p "${{ env.PATH_PREFIX }}/${PKG_NAME}"
+          mv "../out/${PKG_NAME}/${PKG_VERSION}" "${{ env.PATH_PREFIX }}/${PKG_NAME}"
+          rmdir "../out/${PKG_NAME}"
+          rmdir ../out
 
           git add .
           git commit -m "${PKG_NAME}:${PKG_VERSION}" || echo "Nothing to commit"
