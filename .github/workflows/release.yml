@@ -73,4 +73,5 @@ jobs:
           git checkout -b "${PKG_NAME}-${PKG_VERSION}"
           git add .
           git commit -m "${PKG_NAME}:${PKG_VERSION}"
+          git pull --rebase
           git push --set-upstream origin "${PKG_NAME}-${PKG_VERSION}"
