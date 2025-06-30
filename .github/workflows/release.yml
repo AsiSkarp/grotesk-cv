@@ -70,8 +70,21 @@ jobs:
           cd typst-packages
           git config user.name "${GIT_USER_NAME}"
           git config user.email "${GIT_USER_EMAIL}"
-          git checkout -b "${PKG_NAME}-${PKG_VERSION}"
+
+          BRANCH="${PKG_NAME}-${PKG_VERSION}"
+
+          # Fetch remote branches to check for existence
+          git fetch origin
+
+          if git ls-remote --exit-code --heads origin "${BRANCH}"; then
+            echo "Branch ${BRANCH} already exists on remote. Checking it out..."
+            git checkout "${BRANCH}"
+            git pull origin "${BRANCH}"
+          else
+            echo "Creating new branch ${BRANCH}"
+            git checkout -b "${BRANCH}"
+          fi
+
           git add .
-          git commit -m "${PKG_NAME}:${PKG_VERSION}"
-          git pull --rebase
-          git push --set-upstream origin "${PKG_NAME}-${PKG_VERSION}"
+          git commit -m "${PKG_NAME}:${PKG_VERSION}" || echo "Nothing to commit"
+          git push --set-upstream origin "${BRANCH}"
