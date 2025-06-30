@@ -81,6 +81,13 @@ jobs:
 
           # Now copy files into the checked out branch
           mkdir -p "${{ env.PATH_PREFIX }}/${PKG_NAME}"
+
+          TARGET_DIR="${{ env.PATH_PREFIX }}/${PKG_NAME}/${PKG_VERSION}"
+          if [ -d "$TARGET_DIR" ]; then
+            echo "Removing existing directory $TARGET_DIR"
+            rm -rf "$TARGET_DIR"
+          fi
+
           mv "../out/${PKG_NAME}/${PKG_VERSION}" "${{ env.PATH_PREFIX }}/${PKG_NAME}"
           rmdir "../out/${PKG_NAME}"
           rmdir ../out
